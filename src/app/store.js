@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import createVideoModelReducer from "../features/createVideoModelSlice";
+import alertModelReducer from "../features/alertModelSlice";
+import authModelReducer from "../features/authModelSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    createVideoModelReducer,
+    alertModelReducer,
+    authModelReducer,
   },
 });
